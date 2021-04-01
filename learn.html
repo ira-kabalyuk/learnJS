@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<script>
+//Объекты https://learn.javascript.ru/object
+
+//1
+// Создайте пустой объект user.
+// Добавьте свойство name со значением John.
+// Добавьте свойство surname со значением Smith.
+// Измените значение свойства name на Pete.
+// Удалите свойство name из объекта.
+
+// let user = {}
+// user.name = 'John'
+// user.surname = 'Smith'
+// user.name = 'Pete'
+// delete user.name
+
+
+//3
+//Можно ли изменить объект, объявленный с помощью const? Как вы думаете?
+
+// const user = {
+//   name: "John"
+// };
+
+// // это будет работать?
+// user.name = "Pete";
+// alert(user.name)
+
+// Ответ: будет работать. Свойства констант объектов можно менять.
+
+
+//4
+// У нас есть объект, в котором хранятся зарплаты нашей команды: Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+// let sum = salaries.John + salaries.Ann + salaries.Pete 
+// alert(sum)
+
+//5
+//Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+// const ages = {
+// 	john: 25,
+// 	ann: 30,
+// 	pete: 35,
+// }
+// const agesLength = Object.keys(ages).length
+// function isEmpty() {
+// 	agesLength==0 ? alert('true') : alert('false');	
+// }
+
+// isEmpty()
+
+// const ages = {
+// 	john: 25,
+// 	ann: 30,
+// 	pete: 35,
+// }
+
+// function isEmpty() {
+// 	for(let key in ages) {
+// 		let agesKeys = key
+// 		agesKeys.length == 0 ? alert('true') : alert('false')
+// 	}
+// }
+
+//isEmpty()
+//6
+// Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
+
+// function multiplyNumeric() {
+// 	for (let key in menu) {  
+// 	let valueMenu = menu[key]
+// 		if (typeof valueMenu == 'number') {
+// 			alert(valueMenu * 2)
+// 		}
+// 	}
+// }
+
+// multiplyNumeric()
+
+
+</script>
