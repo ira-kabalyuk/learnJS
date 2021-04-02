@@ -38,7 +38,7 @@
 //   Ann: 160,
 //   Pete: 130
 // }
-// let sum = salaries.John + salaries.Ann + salaries.Pete 
+// let sum = salaries.John + salaries.Ann + salaries.Pete
 // alert(sum)
 
 //5
@@ -50,9 +50,9 @@
 // }
 // const agesLength = Object.keys(ages).length
 // function isEmpty() {
-// 	agesLength==0 ? alert('true') : alert('false');	
+// 	agesLength==0 ? alert('true') : alert('false');
 // }
-
+//
 // isEmpty()
 
 // const ages = {
@@ -60,34 +60,37 @@
 // 	ann: 30,
 // 	pete: 35,
 // }
-
-// function isEmpty() {
-// 	for(let key in ages) {
-// 		let agesKeys = key
-// 		agesKeys.length == 0 ? alert('true') : alert('false')
+//
+// function isEmpty(obj) {
+//
+// 	for(let key in obj) {
+//     return true
 // 	}
+//
+// 	return false
 // }
+//
+// isEmpty(ages)
 
-//isEmpty()
 //6
 // Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
 
-// let menu = {
-//   width: 200,
-//   height: 300,
-//   title: "My menu"
-// };
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
 
-// function multiplyNumeric() {
-// 	for (let key in menu) {  
-// 	let valueMenu = menu[key]
-// 		if (typeof valueMenu == 'number') {
-// 			alert(valueMenu * 2)
-// 		}
-// 	}
-// }
+function multiplyNumeric(obj) {
+	for (let key in obj) {
+	let valueMenu = obj[key]
+		if (typeof valueMenu == 'number') {
+      obj[key] = valueMenu * 2
+		}
+	}
+}
 
-// multiplyNumeric()
+multiplyNumeric(menu)
 
 
 </script>
