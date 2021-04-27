@@ -75,7 +75,7 @@
 //6
 // Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
 
-let menu = {
+/*let menu = {
   width: 200,
   height: 300,
   title: "My menu"
@@ -90,7 +90,46 @@ function multiplyNumeric(obj) {
 	}
 }
 
-multiplyNumeric(menu)
+multiplyNumeric(menu)*/
+
+/*Напишите код, который будет спрашивать логин с помощью prompt.
+Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».
+Пароль проверять так:
+Если введён пароль «Я главный», то выводить «Здравствуйте!»,
+Иначе – «Неверный пароль»,
+При отмене – «Отменено».*/
+
+/*let login = prompt('Your login')
+let ident = (login == 'admin') && prompt('password') && 'I am in charge' || 'Escape'
+let access = (ident == 'I am in charge') && 'hello' || 'Invalid password' || 'Escape'
+alert (access)*/
+
+let login = prompt('Кто здесь?')
+
+if (login == false || login == null) {
+  alert('Отменено')
+} else if (login !== 'admin') {
+  alert('я вас не знаю')
+} else {(prompt('Пароль!'))
+}
 
 
+/*else {
+  if (login == 'adm') {
+    alert('Здравствуйте')
+  } else if (login !== 'adm') {
+    alert('Неверный пароль')
+  } else {
+    alert('Отменено')
+  }
+}*/
+
+
+// if (login == 'adm') {
+//   alert('Здравствуйте')
+// } else if (login !== 'adm') {
+//   alert('Неверный пароль')
+// } else {
+//   alert('Отменено')
+// }
 </script>
