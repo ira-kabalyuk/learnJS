@@ -16,17 +16,17 @@
 // 	name: "Vasia"
 // }
 
-// function A() {
-// 	return c;
-// }
-// function B() { 
-// 	return c;
-//  }
+function A() {
+	return c;
+}
+function B() {
+	return c;
+ }
 
-// let a = new A();
-// let b = new B();
+let a = new A();
+let b = new B();
 
-// alert( a == b ); // true
+alert( a == b );
 
 // #2
 
@@ -36,26 +36,26 @@
 // sum() возвращает сумму введённых свойств.
 // mul() возвращает произведение введённых свойств.
 
-// function Calc(a, b) {
-//   this.a = a;
-// 	this.b = b;
+function Calc(a, b) {
+  this.a = a;
+	this.b = b;
 
-// 	this.read = function() {
-// 		alert( this.a + this.b );
-//   };
+	this.read = function() {
+		alert( this.a + this.b );
+  };
 
-// 	this.sum = function() {
-// 		alert( +this.a + +this.b );
-//   };
+	this.sum = function() {
+		alert( +this.a + +this.b );
+  };
 
-// 	this.mul = function() {
-// 		alert( +this.a * +this.b );
-//   };
-// }
+	this.mul = function() {
+		alert( +this.a * +this.b );
+  };
+}
 
-// let calculator = new Calc(prompt('число a'), prompt('число b'));
+let calculator = new Calc(prompt('число a'), prompt('число b'));
 
-// calculator.mul(); 
+calculator.mul();
 
 // #3
 // Напишите функцию-конструктор Accumulator(startingValue).
@@ -70,7 +70,7 @@
 // 	this.startingValue = 1;
 // 	this.read = function() {
 // 		let newValue = prompt('Какое число надо добавить?');
-		
+
 // 	};
 // }
 
@@ -78,62 +78,20 @@
 
 // value.read()
 
-// function Accumulator(startingValue) {
-// 	this.startingValue = startingValue;  
-//   this.read = function() {
-// 		this.num = +prompt('Введите число');
-// 		this.result = this.num
-//   };
-// 	this.value = this.result + this.startingValue;
-// }
-
-// let accumulator = new Accumulator(1)
-
-// accumulator.read();
-// accumulator.read();
-
-// alert(accumulator.value)
-
-function showNum() {
-  let value = +prompt('введите число');
-	let result = +value +prompt('введите число');
- 
-  alert(result);
-	alert(result);
-}
-
-showNum()
-
-</script>
-
-<!-- function Accumulator(startingValue) {
+function Accumulator(startingValue) {
 	this.startingValue = startingValue;
-	this.value = prompt('Введите число'); 
-  this.sum = startingValue + +value;
+	this.num = 0;
   this.read = function() {
-    alert(this.sum);
+		this.num = this.num + +prompt('Введите число');
+    this.value = this.num + this.startingValue;
   };
 }
 
 let accumulator = new Accumulator(1)
 
-accumulator.read(); -->
+accumulator.read();
+accumulator.read();
 
-<!-- function User(name) {
-  this.name = name;
+alert(accumulator.value)
+</script>
 
-  this.sayHi = function() {
-    alert( "Меня зовут: " + this.name );
-  };
-}
-
-let vasya = new User("Вася");
-
-vasya.sayHi(); // Меня зовут: Вася
-
-/*
-vasya = {
-   name: "Вася",
-   sayHi: function() { ... }
-}
-*/ -->

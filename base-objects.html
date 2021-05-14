@@ -9,11 +9,11 @@
 // Измените значение свойства name на Pete.
 // Удалите свойство name из объекта.
 
-// let user = {}
-// user.name = 'John'
-// user.surname = 'Smith'
-// user.name = 'Pete'
-// delete user.name
+let user = {}
+user.name = 'John'
+user.surname = 'Smith'
+user.name = 'Pete'
+delete user.name
 
 
 //3
@@ -33,13 +33,13 @@
 //4
 // У нас есть объект, в котором хранятся зарплаты нашей команды: Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
 
-// let salaries = {
-//   John: 100,
-//   Ann: 160,
-//   Pete: 130
-// }
-// let sum = salaries.John + salaries.Ann + salaries.Pete
-// alert(sum)
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+let sum = salaries.John + salaries.Ann + salaries.Pete
+alert(sum)
 
 //5
 //Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
@@ -55,27 +55,27 @@
 //
 // isEmpty()
 
-// const ages = {
-// 	john: 25,
-// 	ann: 30,
-// 	pete: 35,
-// }
-//
-// function isEmpty(obj) {
-//
-// 	for(let key in obj) {
-//     return true
-// 	}
-//
-// 	return false
-// }
-//
-// isEmpty(ages)
+const ages = {
+	john: 25,
+	ann: 30,
+	pete: 35,
+}
+
+function isEmpty(obj) {
+
+	for(let key in obj) {
+    return true
+	}
+
+	return false
+}
+
+isEmpty(ages)
 
 //6
 // Создайте функцию multiplyNumeric(obj), которая умножает все числовые свойства объекта obj на 2.
 
-/*let menu = {
+let menu = {
   width: 200,
   height: 300,
   title: "My menu"
@@ -90,46 +90,6 @@ function multiplyNumeric(obj) {
 	}
 }
 
-multiplyNumeric(menu)*/
+multiplyNumeric()
 
-/*Напишите код, который будет спрашивать логин с помощью prompt.
-Если посетитель вводит «Админ», то prompt запрашивает пароль, если ничего не введено или нажата клавиша Esc – показать «Отменено», в противном случае отобразить «Я вас не знаю».
-Пароль проверять так:
-Если введён пароль «Я главный», то выводить «Здравствуйте!»,
-Иначе – «Неверный пароль»,
-При отмене – «Отменено».*/
-
-/*let login = prompt('Your login')
-let ident = (login == 'admin') && prompt('password') && 'I am in charge' || 'Escape'
-let access = (ident == 'I am in charge') && 'hello' || 'Invalid password' || 'Escape'
-alert (access)*/
-
-let login = prompt('Кто здесь?')
-
-if (login == false || login == null) {
-  alert('Отменено')
-} else if (login !== 'admin') {
-  alert('я вас не знаю')
-} else {(prompt('Пароль!'))
-}
-
-
-/*else {
-  if (login == 'adm') {
-    alert('Здравствуйте')
-  } else if (login !== 'adm') {
-    alert('Неверный пароль')
-  } else {
-    alert('Отменено')
-  }
-}*/
-
-
-// if (login == 'adm') {
-//   alert('Здравствуйте')
-// } else if (login !== 'adm') {
-//   alert('Неверный пароль')
-// } else {
-//   alert('Отменено')
-// }
 </script>
