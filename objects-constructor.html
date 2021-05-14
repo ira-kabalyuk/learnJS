@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<script>
+
+//#1
+
+// Возможно ли создать функции A и B в примере ниже, где объекты равны new A()==new B()?
+// function A() { ... }
+// function B() { ... }
+
+// let a = new A;
+// let b = new B;
+
+// alert( a == b ); // true
+
+// let c = {
+// 	name: "Vasia"
+// }
+
+// function A() {
+// 	return c;
+// }
+// function B() { 
+// 	return c;
+//  }
+
+// let a = new A();
+// let b = new B();
+
+// alert( a == b ); // true
+
+// #2
+
+// Создайте функцию-конструктор Calculator, который создаёт объекты с тремя методами:
+
+// read() запрашивает два значения при помощи prompt и сохраняет их значение в свойствах объекта.
+// sum() возвращает сумму введённых свойств.
+// mul() возвращает произведение введённых свойств.
+
+// function Calc(a, b) {
+//   this.a = a;
+// 	this.b = b;
+
+// 	this.read = function() {
+// 		alert( this.a + this.b );
+//   };
+
+// 	this.sum = function() {
+// 		alert( +this.a + +this.b );
+//   };
+
+// 	this.mul = function() {
+// 		alert( +this.a * +this.b );
+//   };
+// }
+
+// let calculator = new Calc(prompt('число a'), prompt('число b'));
+
+// calculator.mul(); 
+
+// #3
+// Напишите функцию-конструктор Accumulator(startingValue).
+
+// Объект, который она создаёт, должен уметь следующее:
+
+// Хранить «текущее значение» в свойстве value. Начальное значение устанавливается в аргументе конструктора startingValue.
+// Метод read() использует prompt для получения числа и прибавляет его к свойству value.
+// Таким образом, свойство value является текущей суммой всего, что ввёл пользователь при вызовах метода read(), с учётом начального значения startingValue.
+
+// function Accumulator(startingValue) {
+// 	this.startingValue = 1;
+// 	this.read = function() {
+// 		let newValue = prompt('Какое число надо добавить?');
+		
+// 	};
+// }
+
+// let value = new Accumulator()
+
+// value.read()
+
+// function Accumulator(startingValue) {
+// 	this.startingValue = startingValue;  
+//   this.read = function() {
+// 		this.num = +prompt('Введите число');
+// 		this.result = this.num
+//   };
+// 	this.value = this.result + this.startingValue;
+// }
+
+// let accumulator = new Accumulator(1)
+
+// accumulator.read();
+// accumulator.read();
+
+// alert(accumulator.value)
+
+function showNum() {
+  let value = +prompt('введите число');
+	let result = +value +prompt('введите число');
+ 
+  alert(result);
+	alert(result);
+}
+
+showNum()
+
+</script>
+
+<!-- function Accumulator(startingValue) {
+	this.startingValue = startingValue;
+	this.value = prompt('Введите число'); 
+  this.sum = startingValue + +value;
+  this.read = function() {
+    alert(this.sum);
+  };
+}
+
+let accumulator = new Accumulator(1)
+
+accumulator.read(); -->
+
+<!-- function User(name) {
+  this.name = name;
+
+  this.sayHi = function() {
+    alert( "Меня зовут: " + this.name );
+  };
+}
+
+let vasya = new User("Вася");
+
+vasya.sayHi(); // Меня зовут: Вася
+
+/*
+vasya = {
+   name: "Вася",
+   sayHi: function() { ... }
+}
+*/ -->
