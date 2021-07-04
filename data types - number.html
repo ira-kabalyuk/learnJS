@@ -15,38 +15,30 @@
 // Функция должна возвращать числовое значение.
 // Также надо разрешить пользователю остановить процесс ввода, отправив пустую строку или нажав «Отмена». В этом случае функция должна вернуть null.
 
-// function readNumber() {
-// 	while (true) {
+function readNumber() {
+	while (true) {
+	let value = prompt("Введите число", '');
 
-// 	let value = prompt("Введите число", '');
-// 	let num = isFinite(value);
+	if (value === '' || value === null) {
+	  return alert(null)
+  }
+    let num = parseInt(value);
 
-// 		if (num === true) {
-// 			return alert(value);
-// 			breack;
-// 		}
-		
-// 		else if (value === null) {
-// 			return alert('null')
-// 			breack;
-// 		}
+		if (!isNaN(num)) {
+			return alert(value);
+		}
+	}
+}
 
-// 		else if (value === "") {
-// 			return alert('null')
-// 		}
-// 	}
-// }
-
-//readNumber()
-
+readNumber()
 
 
 // 3 Напишите функцию random(min, max), которая генерирует случайное число с плавающей точкой от min до max (но не включая max).
 
-function random(min, max) {
+/*function random(min, max) {
 	return alert( Math.random() * (max - min) + min );
 }
 
-random(1, 5)
+random(1, 5)*/
 
 </script>

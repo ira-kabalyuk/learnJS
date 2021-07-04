@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec1d7de4-ed19-4a2e-b09a-ca237d46f843" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/base-objects.html" beforeDir="false" afterPath="$PROJECT_DIR$/base-objects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects-constructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/objects-constructor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects-this-method.html" beforeDir="false" afterPath="$PROJECT_DIR$/objects-this-method.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +39,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621016376294</updated>
-      <workItem from="1621016377340" duration="4261000" />
+      <workItem from="1621016377340" duration="4468000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="393" y="0" width="990" height="824" key="CommitChangelistDialog2" timestamp="1621021275855">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="0" width="990" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1621021275855" />
   </component>
 </project>
