@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<script>
+
+//1. Напишите функцию ucFirst(str), возвращающую строку str с заглавным первым символом. Например:
+
+// function ucFirst(str) {
+// 	alert(str[0].toUpperCase() + str.slice(1)) 
+// }
+
+// ucFirst('kjfkd')
+
+// 2. Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.
+// Функция должна быть нечувствительна к регистру:
+
+// function checkSpam(str) {	
+// 	let string = str.toLowerCase()
+
+// 	return string.includes('viagra') || string.includes('xxx')
+// }
+
+// alert(checkSpam('innocent rabbit'))
+
+// 3. Создайте функцию truncate(str, maxlength), которая проверяет длину строки str и, если она превосходит maxlength, заменяет конец str на "…", так, чтобы её длина стала равна maxlength.
+// Результатом функции должна быть та же строка, если усечение не требуется, либо, если необходимо, усечённая строка.
+
+// function truncate(str, maxlength ) {
+// 	var stringLength = str.length
+// 	if ( stringLength > maxlength) {
+// 	  return str.slice(0, maxlength) + '...'
+//   }	
+//   return str
+// }
+
+// alert(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20))
+
+
+// 4. Есть стоимость в виде строки "$120". То есть сначала идёт знак валюты, а затем – число.
+
+// Создайте функцию extractCurrencyValue(str), которая будет из такой строки выделять числовое значение и возвращать его.
+
+function extractCurrencyValue(str) {
+	let valueOnly = str.slice(1)
+	let isNumber = isFinite(valueOnly)
+
+	return isNumber == true ? +valueOnly : 'чисел не обнаружено'
+}
+
+
+alert(extractCurrencyValue('$150596'))
+
+</script>
